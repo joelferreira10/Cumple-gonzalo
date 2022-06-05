@@ -1,0 +1,45 @@
+@keyframes colores{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes emogis{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes titulo{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+    0%{transform: scale(1);}
+}
+
+body{
+    
+    height: 100vh;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: colores 15s ease infinite;
+}
+.boton{
+    margin:200px 40px;
+}
+
+.titulo{
+    transition: all 1s ease;
+    animation: titulo 2s infinite;
+    padding-left: 50px;
+    border:none;
+}
+
+.emogi{
+    width: 10px;
+    display: inline-block;
+    animation: emogis 3s infinite;
+    font-size: 30px;
+}
